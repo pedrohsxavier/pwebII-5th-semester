@@ -9,11 +9,13 @@
 <h:messages errorStyle="color:red"/>
 
 <h:form>
-<h:inputText id="login" value="#{loginBean.login}" required="true">
-	<f:validateLength minimum="5" maximum="10"/>
-</h:inputText><br/>
-<h:inputSecret id="senha" value="#{loginBean.senha}" required="true"/><br/>
-<h:commandButton value="Logar" action="#{loginBean.autentique}"/>
+	<h:inputText id="login" value="#{loginBean.login}" required="true">
+		<f:validateLength minimum="5" maximum="10"/>
+	</h:inputText><br/>
+	
+	<h:inputSecret id="senha" value="#{loginBean.senha}" required="true"/><br/>
+	
+	<h:commandButton value="Logar" action="#{loginBean.autentique}"/>
 </h:form>
 
 </html>
