@@ -8,7 +8,6 @@ import javax.faces.context.FacesContext;
 @ManagedBean(name="loginBean")
 @SessionScoped
 public class LoginBean {
-	
 	private String login;
 	private String senha;
 	
@@ -33,8 +32,8 @@ public class LoginBean {
 		FacesContext facesContext = FacesContext.getCurrentInstance();
 		facesContext.addMessage(null,
 				new FacesMessage(FacesMessage.SEVERITY_WARN,
-						"Usu·rio e/ou senha inv·lidos.",
-						"Verifique se CAPSLOCK est· ativada."));
+						"Usu√°rio e/ou senha inv√°lidos.",
+						"Verifique se CAPSLOCK est√° ativada."));
 		return null;
 	}
 }
